@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>BraPaws</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-logo">
+            <div class="cabecalho-logo-img">
+                <img src="/img/logo.svg" alt="Logo">
+                <h1>BraPaws</h1>
+            </div>
+            <span class="cabecalho-text">Instituto de Saúde Animal</span>
+        </div>
+
+        <div class="cabecalho-lateral">
+            <button class="botao-inicio resultado">
+                <img src="/img/cruz-verde.svg" alt="Cruz Verde" class="cabecalho-lateral-imagem">
+                <span>Resultado de Exames</span>
+            </button>
+            
+            <button class="botao-inicio emergencia">
+                <img src="/img/maleta-socorros.svg" alt="Emergência" class="cabecalho-lateral-imagem">
+                <span>Emergência 24 horas</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container-menu">
+            <nav class="menu">
+                    <a class="item1" href="#club-paws">Clube Paws</a>
+                    <a class="item2" href="#guia-tutor">Guia Tutor</a>
+                    <a class="item3" href="#promocao">Promoção</a>
+            </nav>
+        </section>
+
+        <section class="container-text-map">
+            <p class="container-text">Oferecemos o que há de mais moderno em <strong>Medicina Veterinária</strong>, 
+                sempre prezando pela qualidade de vida e conforto de nosso 
+                pacientes. Nosso propósito é levar <strong>todos</strong> os cuidados necessários, 
+                uma equipe altamente qualiﬁcada, <strong>assistência 24h</strong> e, o principal: 
+                muito amor.. Estamos em todo o <text class="fonte">Bra</text>sil!</p>
+            <img class="container-map" src="/img/mao-mapa.svg" alt="mapa">
+        </section>
+
+        <section class="container-agendamento">
+            <img class="agenda" src="/img/calendario.svg" alt="agenda">
+            <div class="container-agendamento-centro">
+                <h2>Agende agora</h2>
+                <span class="container-agendamento-centro-texto">Eficiência e cuidado no atendimento veterinário.</span>
+                <button class="button-agendamento">
+                    <img class="whatsapp" src="/img/whatsapp.svg">
+                    <span>(31) 99116-5156</span>
+                </button>
+            </div>
+            <img class="selo-club" src="/img/clube-selo.svg">
+        </section>
+
+        <section id="club-paws" class="container-club-paws">
+            <div class="container-club-paws-text">
+                <span class="container-club-paws-text-1">Clube <text class="container-club-paws-text-2">Paws</text></span>
+                <p class="container-club-paws-text-3">Faça parte do maior clube de assinaturas pet do Brasil. 
+                    Mantenha as consultas e cuidados em dia para seu filho de quatro patas.</p>
+            </div>
+
+            <div class="container-club-paws-func">
+                <img src="/img/animais.svg" alt="animais">
+                <div class="container-club-paws-func-text">
+                    <div class="como-func">
+                        <h3>Como funciona?</h3>
+                        <img class="como-func-img" src="/img/balao-interrogacao.svg" alt="balão de interrogação">
+                    </div>
+                    <span class="como-func-text">Seu cachorro recebe todo mês a visita de um veterinário em sua casa.</span>
+                    <button class="func-button">Eu quero</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="guia-tutor" class="container-guia">
+            <h2>Guia Tutor</h2>
+            <div class="container-guia-geral">
+                <img class="img-guia-balanca" src="/img/balanca.svg" alt="balança">
+                <div class="container-guia-text">
+                    <h3>4 Erros comuns na Alimentação Natural</h3>
+                    <span>Prepare de forma correta a alimentação do seu pet</span>
+                    <button class="button-guia">Assinar</button>
+                </div>
+                <div class="container-guia-text">
+                    <h3>Curso de primeiros socorros para pet</h3>
+                    <span>Esteja preparado para cuidar do seu pet</span>
+                    <button class="button-guia">Assinar</button>
+                </div>
+                <img class="img-guia-cachorro" src="img/cachorro-estetoscopio.svg" alt="cachorro segurando estetoscópio">
+            </div>
+        </section>
+            
+        <section id="promocao" class="container-formulario">
+            <p>Ganhe 10% OFF na primeira consulta, e fique por dentro das nossas novidades e promoções.</p>
+            <form action="#" method="post" class="formulario">
+                <label for="seuNome">Seu Nome</label>
+                <input type="text" id="seuNome" name="seuNome" required>
+        
+                <label for="seuEmail">Seu Email</label>
+                <input type="email" id="seuEmail" name="seuEmail" required>
+        
+                <label for="nomePet">Nome do Pet</label>
+                <input type="text" id="nomePet" name="nomePet" required>
+                <label>Tipo de Pet</label>
+                <div class="container-seletor">
+                        <label class="seletor-animal" for="cao"><input type="radio" name="tipoPet" value="cao" required>Cão</label>
+                        <label class="seletor-animal" for="gato"><input type="radio" name="tipoPet" value="gato" required>Gato</label>
+                        <label class="seletor-animal" for="outro"><input type="radio" name="tipoPet" value="outro" required>Outro</label>
+                </div>
+                <button type="submit" class="button-form">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a>Precisa de ajuda?</a>
+            <a>Quem somos?</a>
+            <a>Trabalhe conosco</a>
+        </div>
+        <span>Todos os direitos reservados</span>
+    </footer>
+</body>
+</html>

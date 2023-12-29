@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lilita+One&family=Roboto+Condensed:wght@300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color-main: #8b00dd;
+    --background-color-secundary: #5a088b;
+    --background-color-terciary: #cbdd85;
+    --text-color-main: #ffffff;
+    --text-color-secundary: #899657;
+    --background-menu: #c7dd74;
+
+    --font-main: 'Roboto Condensed', sans-serif;
+    --font-special: 'Dancing Script', cursive;
+    --title-font: 'Lilita One', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, var(--background-color-main), var(--background-color-secundary));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 50%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem;
+    width: 100%;
+}
+
+.cabecalho-logo-img {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-text {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--background-color-terciary);
+}
+
+h1 {
+    color: var(--text-color-main);
+    font-family: var(--font-special);
+    font-size: 2rem;
+}
+
+.cabecalho-lateral {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.cabecalho-lateral-imagem {
+    width: 1.5rem;
+    margin: .4rem;
+}
+
+.botao-inicio {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    justify-content: center;
+    border: none;
+}
+
+.botao-inicio > span {
+    display: none;
+}
+
+.botao-inicio:hover span{
+    display: flex;
+    align-items: center;
+    width: 4.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    justify-content: center;
+    border: none;
+}
+
+.resultado {
+    color: var(--text-color-secundary);
+    box-shadow: .1rem -.2rem var(--background-color-terciary);
+    font-family: var(--title-font);
+}
+
+.emergencia {
+    color: #c54844;
+    box-shadow: .1rem -.2rem #c54844;
+    font-family: var(--title-font);
+}
+
+.container-menu {
+    display: flex;
+    width: 100%;
+    background-color: var(--background-menu);
+    height: 2.5rem;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--title-font);
+}
+
+.menu > a {
+    display: flex;
+    text-decoration: none;
+    color: #575757;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: var(--text-color-main);
+}
+
+.container-text-map {
+    margin: 2rem 0rem 2rem .4rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.container-text {
+    color: var(--text-color-main);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fonte {
+    font-family: var(--font-special);
+    font-size: 1.3rem;
+}
+
+.container-agendamento {
+    background-color: var(--background-menu);
+    height: 10rem;
+    display: flex;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.agenda {
+    width: 20%;
+    margin: 1rem;
+}
+
+h2 {
+    font-family: var(--title-font);
+}
+
+.container-agendamento-centro-texto {
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+}
+
+.container-agendamento-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.button-agendamento {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: #5a088b;
+    border-radius: 2rem;
+    color: var(--text-color-main);
+    font-family: var(--font-main);
+    font-size: .9rem;
+    border: none;
+}
+
+.button-agendamento:hover {
+    color: var(var(--text-color-secundary))
+}
+
+.whatsapp {
+    width: 20%;
+    margin: .4rem;
+}
+
+.selo-club {
+    width: 20%;
+    align-self: flex-end;
+    position: relative;
+    top: 3rem;
+}
+
+.container-club-paws {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-main);
+    margin-top: 3rem;
+}
+
+.container-club-paws-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.container-club-paws-text-1 {
+    position: relative;
+    left: 2.5rem;
+    font-family: var(--title-font);
+    font-size: 2rem;
+}
+
+.container-club-paws-text-2 {
+    position: relative;
+    left: -1.7rem;
+    top: -1rem;
+    font-family: var(--font-special);
+    font-size: 2.5rem;
+}
+
+.container-club-paws-text-3 {
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.container-club-paws-func {
+    display: flex;
+}
+
+.container-club-paws-func-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.como-func {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--title-font);
+    color: var(--background-color-terciary);
+    font-weight: 100;
+}
+
+.como-func-img {
+    width: 30%;
+    margin: .5rem;
+}
+
+.como-func-text {
+    font-family: var(--font-main);
+    text-align: center;
+}
+
+.func-button {
+    background-color: var(--background-menu);
+    color: var(--text-color-main);
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    position: relative;
+    top: .5rem;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    transition: 1s ease;
+}
+
+.func-button:hover {
+    color: black;
+    transform: scale(1.5);
+}
+
+.container-guia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container-guia > h2 {
+    font-weight: 1;
+    color: var(--text-color-main);
+    font-size: 3rem;
+}
+
+.container-guia-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: var(--font-main);
+    color: var(--text-color-main);
+}
+
+.img-guia-balanca {
+    margin-right:-5rem;
+    margin-top: -2rem;
+    width: 60%;
+}
+
+.img-guia-cachorro {
+    margin-right: -3rem;
+}
+
+.container-guia-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    border: solid .1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.button-guia {
+    background-color: var(--background-menu);
+    color: var(--text-color-main);
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    transition: 1s ease;
+}
+
+.button-guia:hover {
+    color: black;
+    transform: scale(1.5);
+}
+
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    background-color: var(--background-menu);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: var(--font-main);
+    text-align: center;
+    gap: .5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+    align-items: center;
+}
+
+input {
+    border-radius: .5rem;
+    height: 1.5rem;
+    border: none;
+}
+
+.container-seletor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.seletor-animal {
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+}
+
+.button-form {
+    background-color: #cf71ed;
+    color: var(--text-color-main);
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    transition: 1s ease;
+}
+
+.button-form:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--text-color-main);
+    font-family: var(--title-font);
+    margin: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer > a:hover {
+    color: black;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    body {
+        max-width: 1024px;
+    }
+
+    .cabecalho-lateral {
+        height: auto;
+        flex-direction: row;
+        gap: .8rem;
+        position: relative;
+        left: -3rem;
+    }
+    
+    .botao-inicio {
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        justify-content: center;
+        border: none;
+        width: 4.5rem;
+        height: 1.5rem;
+    }
+    
+    .botao-inicio:hover {
+        display: flex;
+        align-items: center;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        justify-content: center;
+        border: none;
+    }
+    
+    .resultado {
+        color: var(--text-color-secundary);
+        box-shadow: .1rem -.2rem var(--background-color-terciary);
+        font-family: var(--title-font);
+    }
+    
+    .emergencia {
+        color: #c54844;
+        box-shadow: .1rem -.2rem #c54844;
+        font-family: var(--title-font);
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .container-text {
+        font-size: 1.5rem;
+    }
+
+    .selo-club {
+        position: relative;
+        width: 20%;
+        top: -.5rem;
+        left: 2rem;
+    }
+
+    .container-agendamento {
+        margin-left: 6rem;
+        background-color: var(--background-menu);
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    .container-agendamento-centro{
+        gap: 1rem;
+    }
+
+    .button-agendamento {
+        font-size: 1.5rem;
+    }
+
+    .como-func h3 {
+        font-size: 1.7rem;
+    }
+
+    .como-func-text {
+        font-size: 1.8rem;
+    }
+
+    .func-button {
+        scale: 1.5;
+    }
+
+    .container-guia-geral {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+    }
+
+    .img-guia-balanca {
+        margin-right: -7rem;
+    }
+
+    .img-guia-cachorro {
+        width: 25%;
+        position: relative;
+        left: -5rem;
+    }
+    
+    .container-formulario {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+
+    .cabecalho-lateral {
+        height: auto;
+        flex-direction: row;
+        gap: .8rem;
+        position: relative;
+        left: -3rem;
+    }
+    
+    .botao-inicio {
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        justify-content: center;
+        border: none;
+        width: 7rem;
+        height: 3rem;
+    }
+    
+    .botao-inicio:hover {
+        display: flex;
+        align-items: center;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        justify-content: center;
+        border: none;
+    }
+    
+    .resultado {
+        color: var(--text-color-secundary);
+        box-shadow: .1rem -.2rem var(--background-color-terciary);
+        font-family: var(--title-font);
+    }
+    
+    .emergencia {
+        color: #c54844;
+        box-shadow: .1rem -.2rem #c54844;
+        font-family: var(--title-font);
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .container-text-map {
+        max-width: 50%;
+        margin: 3rem auto;
+    }
+
+    .container-text {
+        font-size: 1.5rem;
+    }
+
+    .container-agendamento {
+        margin: 0 auto;
+        width: 40%;
+        background-color: var(--background-menu);
+        height: 10rem;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        border-radius: 2rem;
+    }
+
+    .container-agendamento-centro{
+        gap: 1rem;
+    }
+
+    .button-agendamento {
+        font-size: 1.5rem;
+    }
+
+    .selo-club {
+        display: none;
+    }
+
+    .como-func h3 {
+        font-size: 1.7rem;
+    }
+
+    .como-func-text {
+        font-size: 1.8rem;
+    }
+
+    .container-club-paws-text {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .container-club-paws-func {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .container-club-paws-func-text {
+        gap: 2rem;
+    }
+
+    .func-button {
+        scale: 1.5;
+    }
+
+    .container-guia-geral {
+        margin: 0 auto;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+    }
+
+    .img-guia-balanca {
+        margin-right: -7rem;
+        width: 20%;
+    }
+
+    .img-guia-cachorro {
+        width: 20%;
+        position: relative;
+        left: -5rem;
+    }
+    
+    .container-formulario {
+        margin: 5rem auto;
+        width: 30%;
+        font-size: 1.5rem;
+    }
+}
