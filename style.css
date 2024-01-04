@@ -209,6 +209,16 @@ h2 {
     align-self: flex-end;
     position: relative;
     top: 3rem;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .container-club-paws {
